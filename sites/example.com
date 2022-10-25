@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -37,7 +38,7 @@
 
 <body>
 <div>
-    <h1>this link is blocked as part of <b>safe site view</b></h1>
+    <h1>Example Domain</h1>
     <p>This domain is for use in illustrative examples in documents. You may use this
     domain in literature without prior coordination or asking for permission.</p>
 </div>
