@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Required meta tags-->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Mogul™" name="description"/>
+  <meta content="Mogul™" name="author"/>
+  <meta content="Mogul" name="keywords"/>
+  <!-- Title Page-->
+  <title>
+   Mogul™
+  </title>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" rel="preconnect"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" rel="stylesheet"/>
+  <!-- Fontfaces CSS-->
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- Bootstrap CSS-->
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <!-- Vendor CSS-->
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <!-- Main CSS-->
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+  <link href="https://maorgur.github.io/outside-link?link=mogul.live" media="all" rel="stylesheet"/>
+ </head>
+ <body class="animsition" onclick="closePopups(event);">
+  <div id="fb-root">
+  </div>
+  <div id="loadingmask">
+   <i class="fa fa-spinner fa-spin">
+   </i>
+  </div>
+  <!-- Modal -->
+  <div aria-hidden="true" class="modal fade" id="orgsPopup">
+   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+     <h3 class="text-center">
+      Choose Organization
+     </h3>
+     <div class="modal-body" id="organizationsList">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="page-wrapper">
+   <!-- MENU SIDEBAR-->
+   <aside class="menu-sidebar2">
+    <div class="logo" style="padding-top:15px">
+     <a href="https://maorgur.github.io/outside-link?link=mogul.live">
+      <img alt="Admin Panel" src="http://mogul.live/portal/images/icon/Mogul/logo-tm.png"/>
+     </a>
+     <!-- <span class="versionNumber">v ..</span> -->
+    </div>
+    <div class="menu-sidebar2__content js-scrollbar1">
+     <div class="account2" style="display: none;">
+      <div id="org_select">
+      </div>
+      <div class="avatarImageBox" id="avatarImageBox">
+       <div class="avatarImageWrapper">
+        <img alt="Avtar" id="avatarImage" src="http://mogul.live/portal/images/icon/avatar-big-02.png"/>
+       </div>
+       <i class="fa fa-pencil" id="editProfileImage" onclick="editProfileImage()">
+       </i>
+      </div>
+      <h4 class="name">
+      </h4>
+     </div>
+     <!-- including navbar from other file -->
+     <!-- this  is navbar component and this needs a variable $currentPage to work -->
+     <nav class="navbar-sidebar2">
+      <ul class="list-unstyled navbar__list" style="padding-bottom:20px;">
+       <!--- Video Links --->
+       <li class="main-link link-video" onclick="showSubList('link-video', 'sub-link-video')">
+        <a class="js-arrow" href="https://maorgur.github.io/outside-link?link=mogul.live">
+         <i class="fas fa-photo-video">
+         </i>
+         <span>
+          Video
+         </span>
+         <i class="fas fa-angle-up">
+         </i>
+        </a>
+       </li>
+       <li class="sub-link sub-link-video active has-sub">
+        <a class="js-arrow" href="https://maorgur.github.io/outside-link?link=mogul.live">
+         <i class="fas fa-photo-video">
+         </i>
+         Mogul Videos
+        </a>
+       </li>
+       <!--- Organization Links --->
+       <!--- Users Links --->
+       <li class="main-link link-user" onclick="showSubList('link-user', 'sub-link-user')">
+        <a class="js-arrow" href="https://maorgur.github.io/outside-link?link=mogul.live">
+         <i class="fas fa-users">
+         </i>
+         <span>
+          User
+         </span>
+         <i class="fas fa-angle-down">
+         </i>
+        </a>
+       </li>
+       <li class="sub-link sub-link-user hide">
+        <a href="https://maorgur.github.io/outside-link?link=mogul.live">
+         <i class="fa fa-cog">
+         </i>
+         Settings
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </aside>
+   <!-- END MENU SIDEBAR-->
+   <!-- PAGE CONTAINER-->
+   <div class="page-container2">
+    <header class="public-header">
+     <div class="first-container">
+      <div class="logo">
+       <a href="https://maorgur.github.io/outside-link?link=mogul.live" style="width: 150px;">
+        <img alt="Admin Panel" src="http://mogul.live/portal/images/newBWIlogo.png"/>
+       </a>
+      </div>
+      <div class="search-box-area">
+       <input class="input-search" id="searchFieldPreLogin" onkeyup="doSearch(this)" placeholder="Search..." required="" type="text"/>
+       <button class="search-button" type="submit">
+        <i class="fas fa-search">
+        </i>
+       </button>
+      </div>
+      <div class="d-flex button-area">
+       <div class="login-button" style="cursor: pointer;margin-right: 10px;">
+        <a href="https://maorgur.github.io/outside-link?link=mogul.live" style="color:#fff; text-decoration:none;">
+         <i class="fa fa-user-plus" style="font-size: 16px;">
+         </i>
+         <span style="margin-left: 5px;">
+          SIGN UP
+         </span>
+        </a>
+       </div>
+       <div class="login-button" onclick="login()" style="cursor: pointer;">
+        <i class="far fa-user-circle" style="font-size: 20px;">
+        </i>
+        <span style="margin-left: 5px;">
+         SIGN IN
+        </span>
+       </div>
+      </div>
+      <div class="m-view-area d-none">
+       <div class="m-view-search-box">
+        <i class="fas fa-search" onclick="showSearchBox()">
+        </i>
+        <div class="m-view-search-box-area" style="display: none;">
+         <div>
+          <button class="search-button">
+           <i class="fas fa-search">
+           </i>
+          </button>
+          <input class="input-search" id="mSearchField" onkeyup="doSearch(this)" placeholder="Search..." type="text"/>
+         </div>
+         <button class="search-close-button" onclick="showSearchBox()">
+          <i class="fas fa-times">
+          </i>
+         </button>
+        </div>
+       </div>
+       <div class="m-view-profile-icon d-none">
+        <i class="far fa-user" onclick="showSideBar()">
+        </i>
+        <div class="m-view-side-bar">
+         <div class="login-button" onclick="login()" style="cursor: pointer;">
+          <i class="far fa-user-circle" style="font-size: 20px;">
+          </i>
+          <span style="margin-left: 5px;">
+           SIGN IN
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="second-container d-none">
+      <div class="login-button" style="cursor: pointer;">
+       <a href="https://maorgur.github.io/outside-link?link=mogul.live" style="color:#fff; text-decoration:none;">
+        <i class="fa fa-user-plus" style="font-size: 16px;">
+        </i>
+        <span style="margin-left: 5px;">
+         SIGN UP
+        </span>
+       </a>
+      </div>
+      <div class="login-button" onclick="login()" style="cursor: pointer;">
+       <i class="far fa-user-circle" style="font-size: 20px;">
+       </i>
+       <span style="margin-left: 5px;">
+        SIGN IN
+       </span>
+      </div>
+     </div>
+    </header>
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop2" style="height: auto;">
+     <div class="mob-logo" style="display: flex;background: black;">
+      <img alt="Admin Panel" class="d-sm-none d-block" src="http://mogul.live/portal/images/BWlogo.jpg" style="height: 40px;z-index: 1002;"/>
+     </div>
+     <div class="container-fluid">
+      <div class="header-wrap2">
+       <div class="header-mnav">
+        <img alt="menu" id="show-menu" onclick="showMobMenu()" src="http://mogul.live/portal/images/list.png" title="Show Left SideBar Menu"/>
+       </div>
+       <div style="display:none;color:var(--projectAccent);font-size:40px;position:absolute; top:-20px;left:0; right:0; text-align: center; width: 90%">
+       </div>
+       <div class="logo d-block d-lg-none">
+        <a href="https://maorgur.github.io/outside-link?link=mogul.live">
+        </a>
+       </div>
+       <div class="videoMogulTrial" onclick="" style="margin-left:auto; cursor: pointer; z-index: 9;">
+        <span style="background-color: #808080;">
+        </span>
+       </div>
+       <div class="header-button-item js-item-menu" id="searchDropdown" style="margin-left: 10px;">
+        <i class="zmdi zmdi-search">
+        </i>
+        <div class="search-dropdown js-dropdown">
+         <span class="search-dropdown__icon">
+          <i class="zmdi zmdi-search" onclick="toggleSearch()">
+          </i>
+         </span>
+         <input class="vi-search-input au-input--full" id="searchField" onkeyup="doSearch(this)" placeholder="Search" type="text"/>
+         <span class="search-close__icon">
+          <i class="zmdi zmdi-close" onclick="clearSearch()">
+          </i>
+         </span>
+        </div>
+       </div>
+       <!-- I have removed lots of checks because now we are displaying a separate header for mogul live - by sharique -->
+       <div class="header-button2" style="margin-left:auto; ">
+        <div>
+         <i class="fas fa-th-list" id="toggleTable" onclick="setShowTable()" style="margin-top: 4px; color:white; margin-right: 15px; font-size: 22px;">
+         </i>
+        </div>
+        <div class="header-button-item mr-0 js-sidebar-btn">
+         <i class="zmdi zmdi-menu">
+         </i>
+        </div>
+        <div class="setting-menu js-right-sidebar d-block h-100">
+         <div class="adminWrapper">
+          <input id="showRemoved" onchange="setShowRemoved()" type="checkbox"/>
+          <label for="showRemoved" style="margin-right: 10px; cursor: pointer;">
+           Show removed videos
+          </label>
+         </div>
+         <div class="adminWrapper" onclick="toggleHideCol(event,'active')" style="cursor:pointer">
+          <i class="fa fa-caret-right">
+          </i>
+          Show Active Columns
+         </div>
+         <div class="" id="activeHideColWrap" style="padding-left:3rem; padding-right:1rem; display:none">
+          <div>
+           <input checked="" id="activeThumb-cell" onchange="$('.activeThumb-cell').toggle()" type="checkbox"/>
+           <label for="activeThumb-cell" style="margin-left: 8px; cursor: pointer;">
+            Thumbnail
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeTitle-cell" onchange="$('.activeTitle-cell').toggle()" type="checkbox"/>
+           <label for="activeTitle-cell" style="margin-left: 8px; cursor: pointer;">
+            Title
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeOwner-cell" onchange="$('.activeOwner-cell').toggle()" type="checkbox"/>
+           <label for="activeOwner-cell" style="margin-left: 8px; cursor: pointer;">
+            Owner
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeVisibility-cell" onchange="$('.activeVisibility-cell').toggle()" type="checkbox"/>
+           <label for="activeVisibility-cell" style="margin-left: 8px; cursor: pointer;">
+            Visibility
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeCreated-cell" onchange="$('.activeCreated-cell').toggle()" type="checkbox"/>
+           <label for="activeCreated-cell" style="margin-left: 8px; cursor: pointer;">
+            Created
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeModified-cell" onchange="$('.activeModified-cell').toggle()" type="checkbox"/>
+           <label for="activeModified-cell" style="margin-left: 8px; cursor: pointer;">
+            Modified
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeLastViewed-cell" onchange="$('.activeLastViewed-cell').toggle()" type="checkbox"/>
+           <label for="activeLastViewed-cell" style="margin-left: 8px; cursor: pointer;">
+            Last Viewed
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeClicks-cell" onchange="$('.activeClicks-cell').toggle()" type="checkbox"/>
+           <label for="activeClicks-cell" style="margin-left: 8px; cursor: pointer;">
+            Clicks
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeViews-cell" onchange="$('.activeViews-cell').toggle()" type="checkbox"/>
+           <label for="activeViews-cell" style="margin-left: 8px; cursor: pointer;">
+            Views
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeUniqueViews-cell" onchange="$('.activeUniqueViews-cell').toggle()" type="checkbox"/>
+           <label for="activeUniqueViews-cell" style="margin-left: 8px; cursor: pointer;">
+            Unique Views
+           </label>
+          </div>
+          <div>
+           <input checked="" id="activeDwellTime-cell" onchange="$('.activeDwellTime-cell').toggle()" type="checkbox"/>
+           <label for="activeDwellTime-cell" style="margin-left: 8px; cursor: pointer;">
+            DwellTime
+           </label>
+          </div>
+         </div>
+         <div class="adminWrapper" onclick="toggleHideCol(event, 'staged')" style="cursor:pointer">
+          <i class="fa fa-caret-right">
+          </i>
+          Show Staged Columns
+         </div>
+         <div class="" id="stagedHideColWrap" style="padding-left:3rem; padding-right:1rem; display:none">
+          <div>
+           <input checked="" id="stagedThumb-cell" onchange="$('.stagedThumb-cell').toggle()" type="checkbox"/>
+           <label for="stagedThumb-cell" style="margin-left: 8px; cursor: pointer;">
+            Thumbnail
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedTitle-cell" onchange="$('.stagedTitle-cell').toggle()" type="checkbox"/>
+           <label for="stagedTitle-cell" style="margin-left: 8px; cursor: pointer;">
+            Title
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedOwner-cell" onchange="$('.stagedOwner-cell').toggle()" type="checkbox"/>
+           <label for="stagedOwner-cell" style="margin-left: 8px; cursor: pointer;">
+            Owner
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVisibility-cell" onchange="$('.stagedVisibility-cell').toggle()" type="checkbox"/>
+           <label for="stagedVisibility-cell" style="margin-left: 8px; cursor: pointer;">
+            Visibility
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedCreated-cell" onchange="$('.stagedCreated-cell').toggle()" type="checkbox"/>
+           <label for="stagedCreated-cell" style="margin-left: 8px; cursor: pointer;">
+            Created
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedModified-cell" onchange="$('.stagedModified-cell').toggle()" type="checkbox"/>
+           <label for="stagedModified-cell" style="margin-left: 8px; cursor: pointer;">
+            Modified
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedLast-Published-cell" onchange="$('.stagedLast-Published-cell').toggle()" type="checkbox"/>
+           <label for="stagedLast-Published-cell" style="margin-left: 8px; cursor: pointer;">
+            Last Published
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-Width-cell" onchange="$('.stagedVideo-Width-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-Width-cell" style="margin-left: 8px; cursor: pointer;">
+            Width
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-Hight-cell" onchange="$('.stagedVideo-Hight-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-Hight-cell" style="margin-left: 8px; cursor: pointer;">
+            Hight
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-Size-cell" onchange="$('.stagedVideo-Size-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-Size-cell" style="margin-left: 8px; cursor: pointer;">
+            Size
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-Length-cell" onchange="$('.stagedVideo-Length-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-Length-cell" style="margin-left: 8px; cursor: pointer;">
+            Length
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-Fps-cell" onchange="$('.stagedVideo-Fps-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-Fps-cell" style="margin-left: 8px; cursor: pointer;">
+            Fps
+           </label>
+          </div>
+          <div>
+           <input checked="" id="stagedVideo-BitRate-cell" onchange="$('.stagedVideo-BitRate-cell').toggle()" type="checkbox"/>
+           <label for="stagedVideo-BitRate-cell" style="margin-left: 8px; cursor: pointer;">
+            Bit Rate
+           </label>
+          </div>
+         </div>
+         <!-- <div class="account-dropdown__item" style="display:block;">
+										<a id="importPickerRef" style="cursor: pointer">
+											<i class="fa fa-upload"></i>
+											<label style="cursor: pointer;">Import</label>
+											<input type="file" accept=".mgl" id="importMgl" style="display:none;padding-left:5px; width: 50px;" />
+										</a>
+									</div> -->
+         <div class="account-dropdown__item">
+          <a href="https://maorgur.github.io/outside-link?link=mogul.live">
+           <i class="fas fa-sign-out-alt">
+           </i>
+           Sign Out
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <!-- END BREADCRUMB-->
+    <!-- FOOTER-->
+    <section id="mainPage" onclick="hideMobMenu(event)" style="width: 100%;">
+     <!-- Page Content -->
+     <div class="container" id="container">
+      <div class="row text-center text-lg-left" id="active_visuals" style="margin: 5px 0px;">
+      </div>
+      <div class="row text-center text-lg-left" id="visuals" style="margin: 5px 0px;">
+      </div>
+     </div>
+    </section>
+    <!-- <section class="copyrightBox">
+				<p>Copyright 2022 MOGUL LLC.  Patent Pending.</p>
+			</section> -->
+    <section class="au-breadcrumb breadcrumbBottom">
+     <div class="section__content section__content--p30">
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="copyright">
+          <p>
+           Copyright 2022 MOGUL LLC. Patent Pending.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- END PAGE CONTAINER-->
+   </div>
+  </div>
+  <!-- Jquery JS-->
+  <!-- Bootstrap JS-->
+  <!-- Vendor JS       -->
+  <!-- Main JS-->
+ </body>
+</html>
+<!-- end document-->
